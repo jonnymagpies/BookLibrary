@@ -17,7 +17,7 @@
 ====	5. Go to target/BookLibrary-1.0.0-dist/BookLibrary-1.0.0 folder								====
 ====	6. Inside there are two folder (config and lib), a jar file (BookLibrary-1.0.0.jar),		====
 ====	   and a bash file (BookLibraryApp.sh)														====
-====	7. To start/stop the app,type ./BookLibrary.sh [start/stop]									====
+====	7. To start/stop the app,type ./BookLibraryApp.sh [start/stop]								====
 ========================================================================================================
 ========================================================================================================
 ====	Preconfiguration																			====
