@@ -110,7 +110,7 @@ public class LibraryService {
 				newbook.setCreatedBy("AddBook API");
 				newbook.setCreatedDate(Timestamp.valueOf(LocalDateTime.now()));
 				book.save(newbook);
-				return new ResponseEntity<String>(generateResponse(false, "Book saved successfully", new JSONArray()),
+				return new ResponseEntity<String>(generateResponse(true, "Book saved successfully", new JSONArray()),
 						HttpStatus.OK);
 			}
 		} catch (DataIntegrityViolationException e) {
@@ -177,7 +177,7 @@ public class LibraryService {
 		}
 
 		if (booklist.isEmpty()) {
-			resp = new ResponseEntity<String>(generateResponse(false, "No books found", new JSONArray()),
+			resp = new ResponseEntity<String>(generateResponse(true, "No books found", new JSONArray()),
 					HttpStatus.OK);
 		} else {
 			JSONArray jsArr = generateBookList(booklist);
